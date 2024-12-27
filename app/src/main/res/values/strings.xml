@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Function Solution</string>
+    <string-array name="variable_options">
+        <item>a</item>
+        <item>x</item>
+        <item>c</item>
+    </string-array>
+</resources>

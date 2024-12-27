@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поля для ввода a, x и c -->
+    <EditText
+        android:id="@+id/editText_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите a"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите x"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите c"
+        android:inputType="numberDecimal" />
+
+    <!-- Spinner (ComboBox) для выбора функции -->
+    <Spinner
+        android:id="@+id/spinner_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- CheckBox для показа функции -->
+    <CheckBox
+        android:id="@+id/checkBox_showFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Показать функцию" />
+
+    <!-- Кнопка для вычисления -->
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вычислить" />
+
+    <!-- Поле для вывода результата -->
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+
+    <!-- Поле для вывода, какую функцию использовали -->
+    <TextView
+        android:id="@+id/textView_function_used"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Функция, использованная для вычисления: "
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+</LinearLayout>
